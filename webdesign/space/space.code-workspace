@@ -11,7 +11,7 @@
     "editor.tabSize": 2,
     "editor.tabCompletion": "on",
     "editor.wordWrap": "on",
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
     "explorer.confirmDragAndDrop": false,
@@ -49,12 +49,12 @@
     "[html]": {
       "editor.defaultFormatter": "vscode.html-language-features"
     },
-      "files.exclude": {
-        "node_modules": true,
-        ".vscode": true,
-        ".gitignore": true,
-        "package.json": true,
-        "package-lock.json": true,
-      }
+    "files.exclude": {
+      "node_modules": true,
+      ".vscode": true,
+      ".gitignore": true,
+      "package.json": true,
+      "package-lock.json": true
+    }
   }
 }
