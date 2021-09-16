@@ -9,7 +9,7 @@ const Header = (props) => {
   var headerClass = '_header';
 
   const [sticky, setSticky] = useState(false);
-  headerClass += sticky ? ' sticky' : '';
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const scrollListener = () => {
@@ -26,6 +26,9 @@ const Header = (props) => {
     };
   });
 
+  headerClass += sticky ? ' sticky' : '';
+  headerClass += mobileMenuOpen ? ' menu-open' : '';
+
   return (
     <header className={headerClass}>
       <nav className="navbar navbar-dark navbar-expand-lg">
@@ -34,7 +37,7 @@ const Header = (props) => {
             <img src={logo} alt="Space" />
           </a>
           <MenuToggler target="#navbarNav" />
-          <Menu />
+          <Menu stateChanger={setMobileMenuOpen} />
         </div>
       </nav>
     </header>
