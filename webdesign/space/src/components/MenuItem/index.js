@@ -1,9 +1,11 @@
+import './index.scss';
+
 const MenuItem = (props) => {
   var itemClass = 'nav-link';
   itemClass += props.active ? ' active' : '';
 
   return (
-    <li className="nav-item">
+    <li className="_menu-item nav-item">
       <a className={itemClass} aria-current="page" href={props.href}>
         {props.label}
       </a>

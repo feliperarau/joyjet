@@ -1,6 +1,8 @@
+import './index.scss';
+
 const SolidButton = (props) => {
   return (
-    <a className="btn btn-primary" href={props.href}>
+    <a className="_button btn btn-primary" href={props.href}>
       {props.label}
     </a>
   );

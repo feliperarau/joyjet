@@ -1,0 +1,16 @@
+._menu-item {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @at-root .navbar .navbar-nav {
+    .nav-link {
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 300;
+
+      @media screen and (max-width: 992px) {
+        font-size: 20px;
+      }
+    }
+  }
+}

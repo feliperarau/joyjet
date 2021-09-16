@@ -1,3 +1,5 @@
+import './index.scss';
+
 const Entry = ({ title, excerpt, link, image }) => {
   return (
     <div className="_entry card">

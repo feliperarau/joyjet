@@ -1,9 +1,11 @@
+import './index.scss';
+
 const MenuToggler = (props) => {
   const controls = props.target.replace('#', '');
 
   return (
     <button
-      className="navbar-toggler"
+      className="_menu-toggler navbar-toggler collapsed"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target={props.target}
@@ -11,7 +13,8 @@ const MenuToggler = (props) => {
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span className="navbar-toggler-icon"></span>
+      <span className="open-icon ei ei-icon_menu"></span>
+      <span className="closed-icon ei ei-icon_close"></span>
     </button>
   );
 };

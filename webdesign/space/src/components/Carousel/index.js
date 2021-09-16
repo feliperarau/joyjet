@@ -32,13 +32,38 @@ const Carousel = () => {
       link: '/moon',
       image: image3,
     },
+
+    {
+      title: 'My capsule',
+      excerpt:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus aliquet sapien….',
+      link: '/satellite',
+      image: image2,
+    },
   ];
   var settings = {
-    dots: true,
+    arrows: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (

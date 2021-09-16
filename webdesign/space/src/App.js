@@ -11,18 +11,18 @@ function App() {
       <Header />
 
       <main className="page-content">
-        <div className="mb-5">
+        <div className="mb-6 mb-lg-8">
           <Hero />
         </div>
 
-        <div className="container mb-5">
+        <div className="container mb-6">
           <Carousel />
         </div>
-      </main>
 
-      <div className="container mb-5">
-        <AboutUs />
-      </div>
+        <div className="container mb-6">
+          <AboutUs />
+        </div>
+      </main>
 
       <Footer />
     </div>

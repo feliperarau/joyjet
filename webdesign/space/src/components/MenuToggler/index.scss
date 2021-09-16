@@ -1,0 +1,24 @@
+._menu-toggler {
+  padding: 0;
+  border: 0;
+  color: white !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+
+  .closed-icon {
+    display: none;
+  }
+  &:not(.collapsed) {
+    .open-icon {
+      display: none;
+    }
+    .closed-icon {
+      display: block;
+    }
+  }
+  span {
+    &:before {
+      font-size: 60px;
+    }
+  }
+}

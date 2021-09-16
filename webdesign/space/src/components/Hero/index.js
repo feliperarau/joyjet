@@ -17,7 +17,7 @@ const Hero = () => {
             <h1 className="display-4 fw-normal">
               SPACE<span className="dot text-primary">.</span>
             </h1>
-            <p className="lead fw-normal">
+            <p className="hero-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               molestie elit at lacus…
             </p>

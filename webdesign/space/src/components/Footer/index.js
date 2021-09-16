@@ -1,7 +1,9 @@
+import './index.scss';
+
 const Footer = () => {
   return (
-    <footer className="container">
-      © 2016 Created by Joyjet Digital Space Agency
+    <footer className="_footer container">
+      © 2021 Created by Joyjet Digital Space Agency
     </footer>
   );
 };
