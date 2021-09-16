@@ -1,10 +1,13 @@
+@import '../../assets/scss/variables.scss';
+
 ._header {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   height: 160px;
   z-index: 90;
+  transition: 300ms height, 100ms background;
 
   .navbar {
     padding: 0;
@@ -12,5 +15,10 @@
   }
   .navbar-brand {
     padding: 0;
+  }
+
+  &.sticky {
+    background: $primary;
+    height: 96px;
   }
 }

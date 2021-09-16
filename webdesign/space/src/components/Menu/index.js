@@ -1,4 +1,5 @@
 import MenuItem from '../MenuItem';
+import './index.scss';
 
 const Menu = (props) => {
   const menuItems = [
@@ -26,7 +27,7 @@ const Menu = (props) => {
 
   return (
     <div
-      className="collapse navbar-collapse d-lg-flex justify-content-end"
+      className="_navigation collapse navbar-collapse d-lg-flex justify-content-end"
       id="navbarNav"
     >
       <ul className="navbar-nav">
