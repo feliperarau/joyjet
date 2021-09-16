@@ -1,0 +1,16 @@
+@import '../TrendingBar/';
+
+._hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .hero-inner {
+    background-color: rgba(black, 0.5);
+    padding-top: 160px;
+  }
+
+  .dot {
+    font-family: sans-serif;
+  }
+}
