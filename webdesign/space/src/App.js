@@ -18,11 +18,11 @@ function App() {
         <div className="container mb-6">
           <Carousel />
         </div>
-      </main>
 
-      <div className="container mb-5">
-        <AboutUs />
-      </div>
+        <div className="container mb-6">
+          <AboutUs />
+        </div>
+      </main>
 
       <Footer />
     </div>
