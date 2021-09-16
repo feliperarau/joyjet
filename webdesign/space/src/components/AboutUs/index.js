@@ -1,12 +1,13 @@
+import './index.scss';
 import aboutImage from '../../assets/img/satellite-2.jpg';
 
 const AboutUs = () => {
   return (
     <div className="_about-us row">
-      <div className="col-md-3 about-image">
+      <div className="col-md-4 about-image mb-5 mb-lg-0">
         <img src={aboutImage} alt="About us"></img>
       </div>
-      <div className="col-md-9 about-text">
+      <div className="col-md-8 about-text">
         <h2>About Us</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
