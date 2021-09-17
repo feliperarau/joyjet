@@ -1,11 +1,7 @@
 import './index.scss';
 
-const Footer = () => {
-  return (
-    <footer className="_footer container">
-      © 2021 Created by Joyjet Digital Space Agency
-    </footer>
-  );
+const Footer = ({ copyrightText }) => {
+  return <footer className="_footer container">{copyrightText}</footer>;
 };
 
 export default Footer;

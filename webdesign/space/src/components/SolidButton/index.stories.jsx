@@ -12,5 +12,10 @@ const Template = (args) => <SolidButton {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  label: 'SolidButton',
+  label: 'Click',
+  href: '#',
+};
+Primary.argTypes = {
+  label: { description: 'Button Label' },
+  href: { description: 'Button href' },
 };

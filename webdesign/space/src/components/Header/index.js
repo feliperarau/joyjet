@@ -1,15 +1,16 @@
+import React, { useEffect, useState } from 'react';
 import './index.scss';
-import logo from '../../assets/img/logo.png';
 import 'bootstrap/js/dist/collapse';
 import Menu from '../Menu';
 import MenuToggler from '../MenuToggler';
-import React, { useEffect, useState } from 'react';
+import MenuItems from '../../data/MenuItems';
 
-const Header = (props) => {
+const Header = ({ logo, forceSticky, previewMenu }) => {
   var headerClass = '_header';
 
   const [sticky, setSticky] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const headerMenuItems = previewMenu ?? MenuItems;
 
   useEffect(() => {
     const scrollListener = () => {
@@ -26,7 +27,7 @@ const Header = (props) => {
     };
   });
 
-  headerClass += sticky ? ' sticky' : '';
+  headerClass += sticky || forceSticky ? ' sticky' : '';
   headerClass += mobileMenuOpen ? ' menu-open' : '';
 
   return (
@@ -37,7 +38,7 @@ const Header = (props) => {
             <img src={logo} alt="Space" />
           </a>
           <MenuToggler target="#navbarNav" />
-          <Menu stateChanger={setMobileMenuOpen} />
+          <Menu stateChanger={setMobileMenuOpen} menuItems={headerMenuItems} />
         </div>
       </nav>
     </header>
