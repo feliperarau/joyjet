@@ -1,30 +1,15 @@
 import './index.scss';
-import aboutImage from '../../assets/img/satellite-2.jpg';
+import HTMLReactParser from 'html-react-parser';
 
-const AboutUs = () => {
+const AboutUs = ({ title, text, thumbnail }) => {
   return (
     <div className="_about-us row">
       <div className="col-md-4 about-image mb-5 mb-lg-0">
-        <img src={aboutImage} alt="About us"></img>
+        <img src={thumbnail} alt="About us"></img>
       </div>
       <div className="col-md-8 about-text">
-        <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-          nec, vulputate eget, arcu.
-        </p>
-        <p>
-          In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-          dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
-          Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-          Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-          Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-        </p>
+        <h2>{title}</h2>
+        <div>{HTMLReactParser(text)}</div>
       </div>
     </div>
   );
